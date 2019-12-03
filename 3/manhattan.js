@@ -1,4 +1,4 @@
-const manhattanDisatnceIntersectionFinder = (wire1, wire2) => {
+const manhattanDistanceIntersectionFinder = (wire1, wire2) => {
   const wire1Set = new Set();
   const intersectionDistances = new Set();
   const wire1Coordinate = { x: 0, y: 0 };
@@ -85,6 +85,6 @@ const parseInstruction = instruction => {
 };
 
 module.exports = {
-  manhattanDisatnceIntersectionFinder,
+  manhattanDistanceIntersectionFinder,
   fewestCombinedSteps
 };

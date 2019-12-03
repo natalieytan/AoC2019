@@ -20,7 +20,7 @@ const manhattanDistanceIntersectionFinder = (wire1, wire2) => {
       wire2Coordinate.y += vector.y;
       let coordinate = `${wire2Coordinate.x},${wire2Coordinate.y}`;
       if (wire1Set.has(coordinate)) {
-        intersectionDistances.add(wire2Coordinate.x + wire2Coordinate.y);
+        intersectionDistances.add(Math.abs(wire2Coordinate.x) + Math.abs(wire2Coordinate.y));
       }
     }
   }
